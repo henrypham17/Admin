@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/dark_blue"
+              tools:context=".MainActivity">
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent"
+                tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_vertical">
+
+                    <ImageView android:layout_width="40dp"
+                               android:layout_height="40dp"
+                               android:src="@drawable/baseline_arrow_back_24"
+                               android:layout_marginTop="15dp"
+                               android:layout_marginLeft="10dp"/>
+                    <TextView
+                            android:id="@+id/etTimKiem"
+                            android:layout_width="350dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="15dp"
+                            android:textColor="@color/white"
+                            android:text="Thêm mới phim"
+                            android:inputType="text"
+                            android:textSize="20sp"
+                            android:gravity="center"
+                            tools:ignore="TouchTargetSizeCheck"/>
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Tên phim (*)"
+                          android:textSize="15sp"
+                          android:layout_marginTop="20dp"
+                          android:layout_marginLeft="15dp"
+                          android:textColor="@color/white"/>
+            <EditText
+                    android:id="@+id/etTenphim"
+                    android:layout_width="383dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:alpha="0.7"
+                    android:background="@drawable/edit_text_background"
+                    android:ems="10"
+                    android:textColor="@color/white"
+                    android:hint="Tên phim..."
+                    android:inputType="text"
+                    android:padding="12dp"
+                    android:textColorHint="@color/gray"
+                    android:textSize="15sp"
+                    tools:ignore="TouchTargetSizeCheck"/>
+
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Mã phim (*)"
+                      android:textSize="15sp"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginLeft="15dp"
+                      android:textColor="@color/white"/>
+            <EditText
+                    android:id="@+id/etMaphim"
+                    android:layout_width="383dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:alpha="0.7"
+                    android:background="@drawable/edit_text_background"
+                    android:ems="10"
+                    android:textColor="@color/white"
+                    android:hint="Mã phim..."
+                    android:inputType="text"
+                    android:padding="12dp"
+                    android:textColorHint="@color/gray"
+                    android:textSize="15sp"
+                    tools:ignore="TouchTargetSizeCheck"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Mã thể loại (*)"
+                      android:textSize="15sp"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginLeft="15dp"
+                      android:textColor="@color/white"/>
+            <EditText
+                    android:id="@+id/etMaTL"
+                    android:layout_width="383dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:alpha="0.7"
+                    android:background="@drawable/edit_text_background"
+                    android:ems="10"
+                    android:textColor="@color/white"
+                    android:hint="Mã thể loại.."
+                    android:inputType="text"
+                    android:padding="12dp"
+                    android:textColorHint="@color/gray"
+                    android:textSize="15sp"
+                    tools:ignore="TouchTargetSizeCheck"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Mã xuất xứ (*)"
+                      android:textSize="15sp"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginLeft="15dp"
+                      android:textColor="@color/white"/>
+            <EditText
+                    android:id="@+id/etMaXX"
+                    android:layout_width="383dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:alpha="0.7"
+                    android:background="@drawable/edit_text_background"
+                    android:ems="10"
+                    android:textColor="@color/white"
+                    android:hint="Mã xuất xứ..."
+                    android:inputType="text"
+                    android:padding="12dp"
+                    android:textColorHint="@color/gray"
+                    android:textSize="15sp"
+                    tools:ignore="TouchTargetSizeCheck"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Mã tình trạng (*)"
+                      android:textSize="15sp"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginLeft="15dp"
+                      android:textColor="@color/white"/>
+            <EditText
+                    android:id="@+id/etMaTT"
+                    android:layout_width="383dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:alpha="0.7"
+                    android:background="@drawable/edit_text_background"
+                    android:ems="10"
+                    android:textColor="@color/white"
+                    android:hint="Mã tình trạng..."
+                    android:inputType="text"
+                    android:padding="12dp"
+                    android:textColorHint="@color/gray"
+                    android:textSize="15sp"
+                    tools:ignore="TouchTargetSizeCheck"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Phân loại (*)"
+                      android:textSize="15sp"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginLeft="15dp"
+                      android:textColor="@color/white"/>
+            <EditText
+                    android:id="@+id/etPL"
+                    android:layout_width="383dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:alpha="0.7"
+                    android:background="@drawable/edit_text_background"
+                    android:ems="10"
+                    android:textColor="@color/white"
+                    android:hint="Phân loại..."
+                    android:inputType="text"
+                    android:padding="12dp"
+                    android:textColorHint="@color/gray"
+                    android:textSize="15sp"
+                    tools:ignore="TouchTargetSizeCheck"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Thời lượng phim (*)"
+                      android:textSize="15sp"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginLeft="15dp"
+                      android:textColor="@color/white"/>
+            <EditText
+                    android:id="@+id/etTG"
+                    android:layout_width="383dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:alpha="0.7"
+                    android:background="@drawable/edit_text_background"
+                    android:ems="10"
+                    android:textColor="@color/white"
+                    android:hint="Thời lượng phim..."
+                    android:inputType="text"
+                    android:padding="12dp"
+                    android:textColorHint="@color/gray"
+                    android:textSize="15sp"
+                    tools:ignore="TouchTargetSizeCheck"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Mô tả (*)"
+                      android:textSize="15sp"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginLeft="15dp"
+                      android:textColor="@color/white"/>
+            <EditText
+                    android:id="@+id/etMoTa"
+                    android:layout_width="383dp"
+                    android:layout_height="142dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:alpha="0.7"
+                    android:background="@drawable/edit_text_background"
+                    android:ems="10"
+                    android:textColor="@color/white"
+                    android:hint="Mô tả..."
+                    android:padding="12dp"
+                    android:textColorHint="@color/gray"
+                    android:textSize="15sp"
+                    android:gravity="top|start"
+                    android:inputType="textMultiLine"
+                    android:scrollbars="vertical"
+                    tools:ignore="TouchTargetSizeCheck"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Đạo diễn (*)"
+                      android:textSize="15sp"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginLeft="15dp"
+                      android:textColor="@color/white"/>
+            <EditText
+                    android:id="@+id/etDD"
+                    android:layout_width="383dp"
+                    android:layout_height="85dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:alpha="0.7"
+                    android:background="@drawable/edit_text_background"
+                    android:ems="10"
+                    android:textColor="@color/white"
+                    android:hint="Đạo diễn..."
+                    android:padding="12dp"
+                    android:textColorHint="@color/gray"
+                    android:textSize="15sp"
+                    android:gravity="top|start"
+                    android:inputType="textMultiLine"
+                    android:scrollbars="vertical"
+                    tools:ignore="TouchTargetSizeCheck"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Diễn viên (*)"
+                      android:textSize="15sp"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginLeft="15dp"
+                      android:textColor="@color/white"/>
+            <EditText
+                    android:id="@+id/etDV"
+                    android:layout_width="383dp"
+                    android:layout_height="85dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:alpha="0.7"
+                    android:background="@drawable/edit_text_background"
+                    android:ems="10"
+                    android:textColor="@color/white"
+                    android:hint="Diễn viên..."
+                    android:inputType="textMultiLine"
+                    android:scrollbars="vertical"
+                    android:padding="12dp"
+                    android:textColorHint="@color/gray"
+                    android:textSize="15sp"
+                    android:gravity="top|start"
+                    tools:ignore="TouchTargetSizeCheck"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Năm phát hành(*)"
+                      android:textSize="15sp"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginLeft="15dp"
+                      android:textColor="@color/white"/>
+            <EditText
+                    android:id="@+id/etNamPH"
+                    android:layout_width="383dp"
+                    android:layout_height="42dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:alpha="0.7"
+                    android:background="@drawable/edit_text_background"
+                    android:ems="10"
+                    android:textColor="@color/white"
+                    android:hint="Năm phát hành..."
+                    android:inputType="text"
+                    android:padding="12dp"
+                    android:textColorHint="@color/gray"
+                    android:textSize="15sp"
+                    tools:ignore="TouchTargetSizeCheck"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Ảnh (*)"
+                      android:textSize="15sp"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginLeft="15dp"
+                      android:textColor="@color/white"/>
+            <EditText
+                    android:id="@+id/etAnh"
+                    android:layout_width="383dp"
+                    android:layout_height="42dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:alpha="0.7"
+                    android:background="@drawable/edit_text_background"
+                    android:ems="10"
+                    android:textColor="@color/white"
+                    android:hint="Link ảnh..."
+                    android:inputType="text"
+                    android:padding="12dp"
+                    android:textColorHint="@color/gray"
+                    android:textSize="15sp"
+                    tools:ignore="TouchTargetSizeCheck"/>
+
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_margin="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Lưu"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

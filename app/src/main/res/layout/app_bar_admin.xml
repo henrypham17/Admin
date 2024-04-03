@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_color"
+        tools:context=".admin">
+
+    <com.google.android.material.appbar.AppBarLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:theme="@style/Theme.Admin.AppBarOverlay"
+            android:id="@+id/appBarLayout">
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="@dimen/fab_margin"
+            android:layout_marginBottom="16dp"
+            app:srcCompat="@android:drawable/ic_input_add"
+    />
+
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            app:popupTheme="@style/Theme.Admin.PopupOverlay"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_anchorGravity="center"
+            app:layout_anchor="@+id/appBarLayout">
+
+        <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical">
+
+            <ImageView android:layout_width="30dp"
+                       android:layout_height="30dp"
+                       android:src="@drawable/baseline_format_list_bulleted_24"/>
+
+            <EditText
+                    android:id="@+id/etTimKiem"
+                    android:layout_width="321dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="30dp"
+
+                    android:alpha="0.7"
+                    android:background="@drawable/edit_text_background"
+                    android:drawableEnd="@drawable/search"
+                    android:ems="10"
+                    android:textColor="@color/white"
+                    android:hint="Tìm kiếm các tựa đề, thể loại,..."
+                    android:inputType="text"
+                    android:padding="12dp"
+                    android:textColorHint="@color/gray"
+                    android:textSize="15sp"
+                    tools:ignore="TouchTargetSizeCheck"/>
+
+        </LinearLayout>
+
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
