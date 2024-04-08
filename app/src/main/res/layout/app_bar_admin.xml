@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_color"
+        tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:theme="@style/Theme.Admin.AppBarOverlay"
+            android:id="@+id/appBarLayout">
+
+        <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                app:popupTheme="@style/Theme.Admin.PopupOverlay"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_anchorGravity="center"
+                android:background="@color/main_color"
+                app:layout_anchor="@+id/appBarLayout">
+
+            <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical">
+
+                <EditText
+                        android:id="@+id/etTimKiem"
+                        android:layout_width="321dp"
+                        android:layout_height="40dp"
+                        android:alpha="0.7"
+                        android:background="@drawable/edit_text_background"
+                        android:drawableEnd="@drawable/search"
+                        android:ems="10"
+                        android:textColor="@color/white"
+                        android:hint="Tìm kiếm các tựa đề, thể loại,..."
+                        android:inputType="text"
+                        android:padding="12dp"
+                        android:textColorHint="@color/gray"
+                        android:textSize="15sp"
+                        tools:ignore="TouchTargetSizeCheck"/>
+
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include
+            layout="@layout/content_admin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="@dimen/fab_margin"
+            android:layout_marginBottom="16dp"
+            app:srcCompat="@android:drawable/ic_input_add"
+    />
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
