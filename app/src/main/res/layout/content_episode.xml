@@ -30,7 +30,7 @@
 
 
         <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recyclerMenuItems"
+                android:id="@+id/recyclerEpisode"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/view1"

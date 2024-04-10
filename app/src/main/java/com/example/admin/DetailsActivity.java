@@ -1,11 +1,8 @@
 package com.example.admin;
 
-import android.content.DialogInterface;
-import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.Spinner;
-import android.widget.TextView;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
@@ -24,6 +21,7 @@ public class DetailsActivity extends AppCompatActivity {
         setupSpinner(R.id.etMaTL, new String[]{"TC", "HD", "CT", "VT", "PHD", "TX", "HH", "Phiêu lưu"});
         setupSpinner(R.id.etMaTT, new String[]{"DF", "DCN", "SRM"});
         setupSpinner(R.id.etPL, new String[]{"PB", "PL", "HH"});
+
     }
 
     private void setupSpinner(int spinnerId, String[] options) {
@@ -50,4 +48,8 @@ public class DetailsActivity extends AppCompatActivity {
     public void onBackPressed() {
         showExitConfirmation();
     }
+
+    // Inside your Activity that loads activity_admin.xml
+
+
 }

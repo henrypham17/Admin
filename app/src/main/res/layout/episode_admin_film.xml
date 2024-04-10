@@ -27,7 +27,7 @@
                 android:layout_height="wrap_content">
 
             <ImageView
-                    android:id="@+id/still_image"
+                    android:id="@+id/episode_image"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
                     android:background="@drawable/poster_bg"
@@ -43,7 +43,7 @@
                 android:orientation="vertical">
 
             <TextView
-                    android:id="@+id/name_text"
+                    android:id="@+id/episode_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/text_primary"
@@ -52,19 +52,8 @@
                     android:textStyle="bold"
                     android:maxLines="1"
                     android:ellipsize="end"
-                    tools:text="The boy and the heron"/>
+                    tools:text="Tập 1"/>
 
-            <TextView
-                    android:id="@+id/categoty_text"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/text_primary"
-                    android:textSize="14sp"
-                    android:lineHeight="20sp"
-                    android:textStyle="bold"
-                    android:maxLines="1"
-                    android:ellipsize="end"
-                    tools:text="Thể loại: Hoạt hình"/>
 
         </LinearLayout>
 
